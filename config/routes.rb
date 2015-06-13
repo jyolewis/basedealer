@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products, except: [:new, :edit]
   resources :engines, except: [:new, :edit]
   resources :engines, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.

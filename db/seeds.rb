@@ -21,3 +21,10 @@
     description: description
   )
 end
+
+myproduct = Product.create!([
+  {name: 'Subaru WRX'},
+  {price: 50000.00},
+  {description: 'Best Car for Drifting!'},
+  {image_url: 'someWRX.com'}
+  ])
