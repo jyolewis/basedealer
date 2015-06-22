@@ -11,6 +11,13 @@
 #   description: "some desc"
 # )
 
+User.create([
+  {email: 'admin@mail.com',
+   password: '12345678', password_confirmation: '12345678'}
+
+])
+
+
 10.times do |n|
   name = Faker::Commerce.product_name
   price = Faker::Commerce.price
@@ -23,8 +30,8 @@
 end
 
 myproduct = Product.create!([
-  {name: 'Subaru WRX'},
-  {price: 50000.00},
-  {description: 'Best Car for Drifting!'},
-  {image_url: 'someWRX.com'}
+  {  name: 'Subaru WRX',
+     price: 50000.00,
+     description: 'Best Car for Drifting!',
+     image_url: 'someWRX.com'}
   ])
